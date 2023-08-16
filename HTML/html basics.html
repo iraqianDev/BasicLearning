@@ -1,0 +1,317 @@
+<!--main html library-->
+<!DOCTYPE html>
+<!--language-->
+<html lang="en">
+    <!-- head aka brain -->
+<head>
+    <!-- all the languages -->
+    <meta charset="UTF-8">
+    <!-- make website description -->
+    <!-- you can only remove the "" if it is 1 word otherwise it will not work -->
+    <meta name="description"
+    content="monkey stuff">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- view high from width and hight -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title of the website -->
+    <title>monkey</title>
+</head>
+<body>
+    <!-- h1 - h6 is all heading that use to make the heading of the site
+    usually only using 1 heading the the way to go -->
+    <h1>monkey is cool</h1>
+    <!-- b -> bold
+        strong -> bold -> Important text  
+        i -> italic 
+        em -> italic 
+        mark -> yellow mark 
+        u -> underline 
+        small -> smaller text 
+        del -> deleted text  
+        sub -> under stuff
+        sup -> upper stuff   -->
+    <h2>this will tell my opinion</h2>
+    <!--text will be next to each other no matter the space but 
+    paragraph will have a block between each paragraph -->
+    <p id="1">this is <strong>paragraph</strong> </p> monkey is <i><u>really</u></i>  <b>cool!</b> 
+
+    how cool is you <del>ask</del> <p>really cool</p> they drink H<sub>2</sub>O
+    <hr>
+    <!-- a -> link  and it's inline so they will be next to each other
+    there's also targets and one important is _blank to open in new tab
+        and also titles to describe the link
+        or use id to go to a place on the page using #id
+        also other element like mailto: to send email-->
+    you can search up monkeys on 
+    <a href="https://www.google.com/" target="_blank" title="go to Google" >Google</a>
+    <a href="mailto:mneer572@gmail.com" title="My email" >contact me</a>
+    <!--images to add them you need 
+    src -> source
+    alt -> Alternate text IF the pic not show up -->
+    <img src="monkey pic.jpg" alt="Hape prime" width="300" height="300">
+    <hr>
+    <!-- lists contain 
+        ul -> unordered list
+        li -> list items
+        ol -> ordered list can use others like reverse or type -->
+                            <!-- Sparta --> <!--
+        dl -> description list
+            inside dt -> Description term
+                    inside dd -> description of the term
+                -->
+        <li>Hape prime
+            <ol type="I">
+            <li>3d</li>
+            <li>new</li></ol>
+        </li>
+        <li>BAYC
+            <ol reversed>
+            <li>old art</li>
+            <li>old</li></ol>
+
+            <hr>
+        </li>
+        <>HTML 
+<dt>Web languages
+    <dd>web speak</dd>
+</dt>
+
+        </dl>
+
+        <hr>
+        <!-- tables  got options
+    thead -> table head
+    tbody -> table body
+    tfoot -> table foot 
+    tr -> table row
+    td -> table data cell
+    th -> table header cell
+    caption -> table name
+    colspan to mix columns-->
+            <table border="1">
+        <caption>NFTs</caption>
+            <thead>
+                <tr>
+                    <th>project</th>
+                    <th>floor</th>
+                    <th>score</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                    <td>Hape Prime</td>
+                    <td>1</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>BAYC</td>
+                    <td>100</td>
+                    <td>99</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">both monkey</td>
+                    <td>dimond hand score</td>
+                </tr>
+            </tfoot>
+        </table>
+        <hr>
+        <!-- span is to differentiate text from paragraph
+    br is to make new line 
+    hr to make a line between stuff and it's a block -->
+    <p>another <span><br>paragraph</span></p>
+    <hr>
+ <!-- div -> contains to comping stuff together to edit all together
+   can add classes to differentiate from one to another
+  if you want to write <> can you &lt;/&gt; and replace / with anything
+  and any other simple
+   got their own code -->
+  <div>
+    <p>this is a paragraph inside div</p> and this is not <p>if i edit anything it
+     it will be inside div everything will change :) &lt;p&gt; &copy;
+  </p>
+
+</div>
+ <hr>
+<!-- semantic HTML is a way to show parts of the website and help it
+ from Header to navigation to sections to aside and footer and figure and more
+  also can use div to assign them with classes of anything-->
+ <head>this is the head</head>
+ <nav>link link link</nav>
+  <figure>
+  <img src="monkey pic.jpg" alt="Hape prime" width="150" height="150">
+<figcaption>this is a cool monkey</figcaption>
+ </figure>
+ <section>this is the main fouces</section>
+<aside>this is the side bar</aside>
+<footer>end of the site</footer>
+ <hr>
+ <!-- audios and videos when we put anything on the site
+ we have to put more than 1 source to make sure the file can
+ be open in any browser or leave messege that there's audi -->
+<audio controls autoplay loop muted>
+<source src="media/crok.mp3" type="audio/mpeg">
+ <source src="media/crok.wav" type="audio/wav">
+ Your browser doesn't support audio tags
+ </audio>
+ <!-- preload is a way to define when the video should load -->
+ <video controls preload="none" loop muted poster="media/opensea.png" width="350" height="150">
+ <source src="media/ass.mp4" type="video/mp4">
+  your browser don't support videos
+  <!-- this is to give captions or help for people in need -->
+ <track src="my_file_en.vtt"kind="subtitles"srclang="en"label="English">
+  <track src="my_file_it.vtt"kind="subtitles"srclang="it"label="italian">
+ </video>
+<hr>
+<!-- forms to make it you need to input stuff needed and
+there's lot of different type of input and br to make a space
+and we can put other stuff like required to make it demanding
+and also there's placeholder to put text on the field 
+and we put name to subject the reason for the input
+and there's two type of form save method GET show in the link
+and POST that will not show in the link but still be saved
+you can have any field disable or readonly or focus
+you also can novalidate to get anything or target="_blank" to open in new tab-->
+<h1>Log in</h1>
+<form method="post" novalidate target="_blank">
+<div> <label>Username</label>
+<input type="text" required placeholder="Name" name="userid" autofocus></div>
+<br> 
+<div><label>password</label>
+<input type="password"
+required name="pass"
+minlength="8"
+maxlength="20"></div>
+<br> 
+<label>referred </label>
+<input type="text" required name="person who invited" disabled></div>
+<br> 
+<br><div><label>Email</label>
+<input type="email" required name="email"></div> 
+<br>
+<input type="hidden" value="hidden lol">
+<LABel>color</LABel>
+<input type="color" name="color of choice">
+<br>
+<!-- range is a way to get a rang and step is how much they move once -->
+<br><label>How happy you are</label>
+<input type="range" name="precent of happiness" min="0" max="100" 
+step="20" value="0">
+<br>
+<!-- and also same stuff for numbers -->
+<label>chose a random number</label>
+<input type="number" name="random number" min="1" max="100" 
+placeholder="1-100" step="10" readonly>
+<hr>
+<!-- buttons there are two types Radio and checkbox 
+you can connect a word with a button by getting id and for 
+the id and it can work anywhere encluding anything-->
+<h2>answer this: ___ I am gay?</h2>
+<div>
+<input id="yes" type="radio" name="answer" value="gay" >
+<label for="yes">Yes</label></div>
+<div><input id="No" type="radio" name="answer" value="gay x2">
+<label for="No">No</label></div>
+<div><input id="Def" type="radio" name="answer" value="gay x100">
+<label for="Def">Defiantly</label></div>
+</div> 
+<hr>
+<h2>answer this: ___ Are you gay?</h2>
+<div>
+    <input id="yes1"checked type="checkbox" name="answer" value="gay" checked>
+    <label for="yes1">Yes</label></div>
+    <div><input id="No1" type="checkbox" name="answer" value="gay x2">
+    <label for="No1">No</label></div>
+    <div><input id="Def1" type="checkbox" name="answer" value="gay x100">
+    <label for="Def1">Defiantly</label></div>
+    </div>
+    <hr>
+<!-- select is a drop box with things inside option is to 
+give what's needed and optgroup to give option to the group
+and can have multiple selections    -->
+<label for="games">chose a game</label>    
+<select name="games" id="games" multiple>
+    <optgroup label="Steam">
+    <option value="sex">Sex with the devil</option>
+    <option value="nerd" selected>csgo</option>
+    <option value="get a life">LOL</option>
+    </optgroup>
+    <optgroup label="Epicgames">
+    <option value="kid">fortnite</option>
+    </optgroup>
+</select> <br>
+<!-- textarea is a way to write off stuff  -->
+<label for="69">give a reason why you want that game</label>
+<textarea name="reason" id="69" cols="30" rows="10" placeholder="write"></textarea>
+<hr>
+<!-- different type of labels -->
+<div>
+    <label for="sheesh">upload</label>
+    <input id="sheesh" type="file" >
+    <br> <br>
+    <label>search</label>
+    <input type="search">
+    <br> <br>
+    <label>Url</label>
+    <input type="link">
+    <br> <br>
+    <label>Date</label>
+    <input type="date">
+    <br> <br>
+    <label>time</label>
+    <input type="time">
+    <br> <br>
+    <label>month</label>
+    <input type="month">
+</div><br>
+<!-- input lists -->
+<div>
+    <label for="cod">programming languages</label>
+<input id="cod" list="programming" name="coding lang">
+<datalist id="programming">
+<option value="pythong">
+<option value="css">
+<option value="html">
+</datalist>
+</div>
+<hr>
+<br>
+<input type="submit" value="Save">
+<input type="reset" value="reset all">
+</form>
+<!-- other cool shit -->
+<hr>
+"this is cool"
+<br>
+<q>this is cool</q>
+<blockquote>this is a block of cool</blockquote>
+<wbr> this is to break big long text  <wbr>
+<p>سلام 2 welcome</p>
+<p><bdi>سلام</bdi> 2 welcome</p>
+<br>
+<button>click herrrre</button>
+<hr>
+<!-- new stuff 
+code to put any code in the website
+Pre to put whatever spaces in the text or anything
+Iframe to open website in a window -->
+<code class="python">
+    print("hello world")
+    while i text 
+    i = 1
+    else if = 0
+</code>
+<pre>
+<code class="python">
+    print("hello world")
+    while i text 
+    i = 1
+    else if = 0
+</code>
+</pre>
+<iframe src="https://elzero.org/category/courses/html-course/" 
+width="250" height="250"></iframe>
+<hr>
+</body>         
+</html>

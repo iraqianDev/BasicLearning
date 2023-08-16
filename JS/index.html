@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app"></div>
+    </body>
+    <script>
+        const app = document.querySelector(".app")
+        const buttons = ["info", "phone", "email", "github", "linkedin"]
+        console.log(buttons.map(e => `<li>${e}</li>`))
+
+                                                        app.innerHTML = `
+            <ul>
+                ${buttons.map(e => `<li class="button">${e}</li>`)}
+                </ul>
+                ${buttons.map(e => `<div class="${e} hidden">this is the ${e} page</div>`)}
+            `
+                    const selectBtn = document.querySelectorAll(".button")
+                    let divList = document.querySelectorAll("div div")
+
+
+                    selectBtn.forEach(e => {
+                        e.addEventListener("click", () => {
+                            let selected = e.textContent
+
+                            divList.forEach(e => {
+                                if (e.classList.contains(selected)) {
+                                    e.classList.remove("hidden")
+                                } else {
+                                    e.classList.add("hidden")
+                                }
+                            })
+                
+                        })
+                    })
+
+
+</script>
+<style>
+    li {
+        cursor: pointer;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+</html>

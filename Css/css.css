@@ -1,0 +1,961 @@
+/* when we want to change a class we use . and for id use # */
+/* when we want to target a specific one just use it and edit */
+/* we got lot of proprieties like background-color */
+
+.hi {
+  /* this is a class */
+  background-color: white;
+}
+
+#hi {
+  /* this is a id */
+  background-color: black;
+}
+
+/* and getting colors cab be by color name OR rgb numbers or Hex code */
+/* with rgb color there's also Alpha which is the transparency
+VERY IMPORTANT
+example rgb(0 0 0/50%) which means black at half transparency */
+
+.hi {
+  background-color: white;
+  background-color: #ffffff;
+  background-color: rgb(255, 255, 255);
+}
+
+/*you can use pics as background-image and 
+there's background-repeat which is default you can check it 
+to no-repeat or repeat-x or repeat-y to only clone one side */
+
+.hi {
+  background-image: url("../monkey\ pic.jpg");
+  background-repeat: repeat;
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+}
+
+/* also you can change position of any object or size to make it
+follow you in the page or change the position or the size*/
+
+.hi {
+  background-attachment: fixed;
+  /* this is stay still  */
+  background-attachment: scroll;
+  /* this is moving with the page VERY IMPORTANT */
+  background-position: 50% 50%;
+  /* this is the center  */
+  background-position: center center;
+  background-size: auto;
+  /* the stretch or the pic size  */
+  background-size: contain;
+  background-size: cover;
+  /*to change the size to show full pic  */
+}
+
+/* we can add padding and margin and border to the block of stuff
+we can use % or px or auto  */
+
+.hi {
+  background-color: red;
+  padding: 10px 10%;
+  margin: auto;
+  border-width: 10px;
+  border-color: black green yellow purple;
+  border-style: solid dotted dashed;
+  /* OR use a short code */
+  border: black solid 10px;
+  border-radius: 10px;
+  /*this is to make the corners smooth */
+  outline: red solid 10px;
+}
+
+/* 
+block
+-take full width if no width added
+-add line break
+-Respect padding,margin,width,height
+*/
+.hi {
+  display: block;
+}
+
+/* 
+inline
+-don't respect width,height
+-don't add line break
+-only Respect padding,margin only the sides
+-allow elements before and after it
+*/
+.hi {
+  display: inline;
+}
+
+/* 
+inline-block
+-Respect padding,margin,width,height
+-allow elements before and after it
+-take full width if no width added
+*/
+
+.hi {
+  display: inline-block;
+}
+
+/* visibility and display are two thing to change how to show
+a thing in a web tab BUT the visibility leave the place of
+the visitable while display: none remove it completely VERY IMPORTANT */
+
+.hi {
+  visibility: hidden;
+  /*this will leave the space of the thing */
+  display: none;
+  /*this will remove everything */
+}
+
+/* grouping is a way to change multiple things as a group 
+such as classes and others */
+
+.hi,
+.hi1,
+.hi2,
+.hi3 {
+  padding: 10px;
+  /*all of them will have padding of 10px*/
+}
+
+/* nesting is to change specific thing inside a thing like a div */
+
+.div .hi {
+  color: red;
+}
+
+.div p {
+  color: red;
+}
+
+/* width and height*/
+.hi {
+  width: 400px;
+  /* stable width*/
+  min-width: 400px;
+  /* minimum amount of width accepted*/
+  max-width: 400px;
+  /* max amount of width accepted*/
+  width: fit-content;
+  /* what is needed*/
+
+  height: 400px;
+  max-height: 400px;
+  min-height: 400px;
+}
+/* overflow-x and overflow-y */
+.logo {
+  mix-blend-mode: multiply;
+}
+/* this will remove the white background from logos */
+
+.hi {
+  overflow: visible;
+  /* default */
+  overflow: hidden;
+  /* hide the overflow */
+  overflow: scroll;
+  /* make scroll wheal */
+  overflow: auto;
+  /* do what is necessary */
+
+  overflow-x: hidden;
+  /* hide the x overflow */
+  overflow-y: hidden;
+  /* hide the y overflow */
+}
+
+/* text color and shadow  alignment and direction*/
+
+.hi {
+  text-shadow: 0 0 0 red;
+  /* text shadow(x y blur color) VERY IMPORTANT */
+  text-align: center;
+  /* text location in the page */
+  direction: ltr;
+  /* text left to right */
+  direction: rtl;
+  /* text right to left */
+  vertical-align: middle;
+  /* align img to the middle top or bottom*/
+}
+
+/* text-decoration is a way to decorate a text */
+.hi {
+  text-decoration: underline;
+  text-decoration: line-through;
+  text-decoration: overline;
+  text-decoration: none;
+  /* hide the line*/
+}
+
+/* text transformation is a way to edit all text from inside CSS */
+
+.hi {
+  text-transform: capitalize;
+  /* Upper cast first words*/
+  text-transform: lowercase;
+  /* all lowercase*/
+  text-transform: uppercase;
+  /* all uppercase*/
+}
+
+/* spacing */
+
+.hi {
+  letter-spacing: 1px;
+  /* space between each letter*/
+  text-indent: 1px;
+  /*make space from the start of the line
+    usually used for Codes*/
+  line-height: 1.7;
+  /*area between each line and 1.7 is 170%*/
+  word-spacing: 5px;
+  /* space in words */
+  white-space: nowrap;
+  /* make the line overflow*/
+  word-break: break-all;
+  /*make lines break*/
+
+  /* youtube links dots VERY IMPORTANT*/
+  text-overflow: ellipsis;
+}
+
+/* inherit anything from the parent */
+
+.hi {
+  color: red;
+}
+
+.hi1 {
+  color: inherit;
+  /* this will get the info from the parent */
+}
+
+/* font-family to chose what fonts to use */
+
+/* Css unites
+-px 
+-em => time
+-rem => Root time
+-%
+-vw => viewport width
+-vh => viewport height
+*/
+
+/* fonts styles */
+
+.hi {
+  font-style: italic;
+  /* fonts styles */
+  font-variant: normal;
+  /* TEXT SAME LEVEL */
+  font-weight: 100;
+  /* fonts thickness */
+  font-weight: normal;
+  /* fonts thickness */
+}
+
+/* mouse curser */
+
+.hi {
+  cursor: pointer;
+  /* make the mouse shape pointer at that point */
+}
+
+/* float and clear */
+
+.hi {
+  float: left;
+  /* this will make the stuff on top rtl */
+  float: right;
+  /* this will make the stuff on top ltr */
+}
+
+.hi {
+  clear: left;
+  /* this will clear anything and make space */
+  clear: right;
+}
+
+/* calc is a calculator used to determine stuff and used in anything */
+
+.hi {
+  padding: 50px;
+  width: calc((100% - 50px) / 2);
+  /* this will take 50px and divide by 2 */
+}
+
+/* opacity is a way to change the filling of stuff 
+usually used for popups to focus on something else VERY IMPORTANT*/
+
+.hi {
+  background-color: red;
+  opacity: 0.6;
+  /*this will make everting text and collop transparent*/
+}
+
+.hi {
+  background-color: rgb(red 0 0 50%);
+  /*alpha channel only make the background of the 
+    color transparent leaving everting else*/
+}
+
+/* Position
+- Static=>Default
+- Relative=> used for parents element not to go more than the parent and make it move according to the element
+-.Absolute=> to move on top of other things
+-.Fixed
+-.Sticky */
+
+.hi {
+  position: static;
+  /*default*/
+  position: Absolute;
+  /*move according to the element*/
+
+  position: relative;
+  /*this will make a parent the page that can move in VERY IMPORTANT*/
+
+  position: fixed;
+  /*move something with you in the page  VERY IMPORTANT*/
+
+  position: sticky;
+  /*this will stick the element to scroll with you till it goes back 
+    to where it suppose to be and need to put where it will start like top: 0px
+    this will make it scroll as soon at it touch the top of the page EVERY IMPORTANT*/
+}
+
+/* z-index is a way to determine which one is gonna be on top on the other only work with position */
+
+.hi {
+  z-index: 1;
+  /*higher is gonna always show first*/
+}
+
+/* list style to customize list */
+
+ul {
+  list-style-type: disc;
+  /*default*/
+  list-style-position: inside;
+  /*default*/
+}
+
+/* tables */
+
+table {
+  width: 100%;
+  border: 1px;
+  border-spacing: 5px;
+}
+table td {
+  padding: 10px;
+  background-color: #eee;
+}
+
+table thead td {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  text-align: center;
+}
+
+/* pseudo classes to edit classes on actions */
+a {
+  color: green; /*change link to green*/
+  text-decoration: none; /* remove the underline*/
+}
+
+a:visited {
+  color: black; /*change link to black if it has been visited*/
+}
+
+:empty {
+  /*give anything empty green borders*/
+  border-color: green;
+}
+
+.hi::first-letter {
+  display: inline-block;
+  font-size: 30px;
+  color: red;
+  background-color: green;
+  /*this will make the first letter bigger than the rest VERY IMPORTANT*/
+}
+.hi::first-line {
+  display: inline-block;
+  font-size: 30px;
+  color: red;
+  background-color: green;
+  /*this will make the first line bigger than the rest*/
+}
+.hi::selection {
+  color: red;
+  background-color: green;
+  /*this will make the selection diffract color */
+}
+
+/* content attr is a way to edit something without the need to add anything else */
+
+.hi {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #00a796 transparent transparent;
+  /* this will make an arrow pointing */
+}
+
+/* prefix to add new stuff that are not supported yet and there's plugin for it */
+
+.hi {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+  border-radius: 50%; /*this will make it circle */
+}
+
+/* box shadow
+H-shadow | V-shadow | blur | spread | color| inset/outset*/
+
+.hi {
+  padding: 10px;
+  margin: auto; /*centre stuff*/
+  width: 300px;
+  background-color: #eee;
+  box-shadow: 5px 5px 10 10 #eee inset, 5px 5px 10 10 #00f outset;
+  /* you can add more than one shadow  VERY IMPORTANT*/
+}
+
+/* box-sizing is to contain everything inside the box  */
+
+.hi {
+  background-color: #eee;
+  width: 300px;
+  float: left;
+  padding: 10px;
+  border: 10px solid red;
+  box-sizing: border-box;
+  /* this will make anything extra in the box inside it and
+    not make new line  */
+}
+
+/* Transitions  VERY IMPORTANT*/
+
+.hi {
+  margin: auto;
+  margin-top: 50%;
+  background-color: #eee;
+  width: 200px;
+  height: 100px;
+  transition-duration: 1s;
+  /*this will make the transition take 1 sec to finish */
+  transition-delay: 1000ms;
+  /*this will make the transition take 1 sec to start */
+  transition-property: all;
+  /*this will select with transition to do can select or do all*/
+  transition-timing-function: ease;
+  /* transition play ease or liner  */
+}
+
+.hi:hover {
+  margin-top: 20px;
+}
+
+/* important is a attr in CSS to override everything */
+
+.hi {
+  color: red !important;
+  /* this will make this edit override anything else */
+}
+
+/* Roots are way to set :default value and change it when ever */
+
+:root {
+  /*defaults stuff */
+  --mainColor: blue;
+  --mainPadding: 10px;
+}
+
+.hi {
+  background-color: var(--mainColor);
+  padding: calc(20px + var(--mainPadding));
+}
+
+/* 
+Flex box VERY IMPORTANT flexboxfroggy.com
+-display: flex => to start flex box
+-flex-direction: row => default can change to column or reversed
+-flex-wrap: nowrap => default wrap stuff around box
+-flex-flow: (flex-direction flex-wrap)
+-justify-content: flex-start  => default edit content place
+-align-items: stretch => default edit items location
+-align-items: center => to center stuff => default is stretch
+-align-content: center => to center the whole thing => default is stretch
+-flex-grow: 1 => default to make stuff even and make specific grow more than others
+-flex-shrink: make specific one shrink more than others
+-order: 0 => default set order or stuff need to make order for everything
+-flex-basis: 00px this is a way to align height or width ONLY IN FLEX
+-flex: (flex-grow flex-shrink flex-basis) 0 1 auto => default
+-display:inline-flex
+-align-self this will align to itself
+*/
+
+.hi {
+  display: flex;
+  flex-wrap: wrap;
+  /* this will make any extra contest within the box */
+  flex-flow: row wrap;
+  /* -flex-flow: (flex-direction flex-wrap) */
+  flex-direction: column-reverse;
+  /*this will change the direction and make it reverse or not*/
+  justify-content: flex-end;
+  justify-content: center;
+  justify-content: space-evenly;
+  /* will make the next thing start from the end or center and
+    make space equally*/
+  align-items: center, flex-end, flex-start;
+  /* this will make edit to the content inside  */
+  align-content: center, flex-end, flex-start;
+  /* this will make edit to the content as a whole  */
+  flex-grow: 1;
+  /*make everything even*/
+  flex-shrink: 1;
+  /* make specific line shrink more than others */
+  flex-basis: 100px;
+  /* this will add 100px either in height or width which is needed */
+  flex: 1 2 200px;
+  /* (flex-grow flex-shrink flex-basis) */
+  display: inline-flex;
+  /* like inline-block but for flex */
+  align-self: auto;
+  /* this will align to one item of the group */
+}
+
+/* 
+Images
+
+filters on css to set any filters available only use on img
+most common blur in px and gray VERY IMPORTANT
+*/
+
+img {
+  transition: 0.3s;
+  filter: grayscale(100%);
+  filter: blur(5px);
+}
+
+img:hover {
+  filter: grayscale(0%);
+  filter: blur(0);
+}
+
+/* 
+pointer-events and caret-color
+*/
+a .hi {
+  pointer-events: none;
+  /* this will stop any events from happening on clicking like a link */
+}
+
+.hi {
+  caret-color: red;
+  /* this is the typing waiting line color */
+}
+
+/* 
+gradients
+liner-gradient: (direction OR angle, color stop 1, color stop 2, ...)
+*/
+
+.hi {
+  background-image: linear-gradient(to right, red 20%, green 40%, black 50%);
+  /*background-image: linear-gradient(direction,angle,colors (start %)) */
+  width: 400px;
+  height: 300px;
+}
+
+/*
+  Grid system  for parents https://cssgridgarden.com/
+  -display:grid OR inline-grid
+  -grid-template-columns:(number of columns in) => (Px,%,auto,fraction,repeat,mix)
+  -grid-template-rows: same as before
+  -gap =>to make space in between
+  -grid-auto-flow: is just like flex-direction where you set how the grid move column or row ;
+ */
+
+.parent {
+  display: grid;
+
+  background-color: #eee;
+  padding: 10px;
+  margin: 20px auto;
+  width: 800px;
+  height: 400px;
+  grid-template-columns: auto 100px 1fr 20% repeat(2, 100px);
+  /* grid-template-columns:(number of columns in) => (Px,%,auto,fraction,repeat,mix) */
+  grid-template-rows: auto;
+  gap: 10px 5px;
+  /* gap: (row gap) (column gap) */
+}
+
+/* FULL LAYOUT VERY IMPORTANT */
+
+* {
+  /* the * is to apply to all the page */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hi {
+  background-color: #eee;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  /* how many columns */
+  grid-template-rows: 40px auto 20px;
+  /* space of the rows */
+  grid-template-areas:
+    "logo logo nav nav nav nav nav nav nav nav"
+    "cont cont cont cont cont cont cont . side side"
+    "footer footer footer footer footer footer footer footer footer footer";
+  /* area of each section */
+}
+.ul li {
+  display: inline-block;
+}
+.h2 {
+  grid-area: logo;
+  background-color: red;
+  color: white;
+}
+
+.nav {
+  grid-area: nav;
+  background-color: blue;
+  color: white;
+}
+
+.aside {
+  grid-area: side;
+  background-color: green;
+  color: white;
+}
+
+.section {
+  grid-area: cont;
+  background-color: aqua;
+  color: white;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+}
+
+/* 
+grid-column/grid-row: from / to OR number of spans for child
+*/
+
+.hi {
+  grid-column: 1 / 3;
+  /* this will connect column 1 and 2 */
+  grid-row: span 2;
+  /* this will connect row 1 and 2 */
+}
+
+.hi {
+  grid-row-start: 2;
+  grid-column-start: 3;
+  grid-row-end: 5;
+  grid-column-end: 6;
+  /* OR */
+  grid-area: 2 / 3 / 5 / 6;
+  /* same as one above it */
+}
+
+/* minmax VERY IMPORTANT to put max and min area space */
+
+.hi {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  /* this will place columns automatic will min of 200px and 
+  extend till the end with 1fr */
+}
+
+/* Transform 
+2D transform X and Y  in scale
+-transform: scale(X AND Y in one OR X,Y) VERY IMPORTANT
+-transform: rotate(deg OR turn) => 1 turn is 360 degree
+-transform: translate (X,Y) to change something position
+-transform: skew(X,Y) to change view of it
+-transform: matrix (scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
+*/
+
+.hi {
+  transform: scaleX(2);
+  transform: scaleY(2);
+  transform: scale(2);
+  /* same as the one above it */
+  transform: scale(2, 2);
+  /* same as the one above it */
+}
+.hi {
+  transform: rotate(360deg);
+  transform: rotate(1turn);
+  /* this is the same as above */
+}
+
+/* to mix the two you need them in the same line */
+.hi {
+  transform: scale(1.25) rotate(5deg);
+}
+
+.hi {
+  transform: translate(100px, 100px);
+  /* this will change position of something 100px each way */
+}
+
+.hi {
+  transform: skew(20deg, 20deg);
+}
+
+.hi {
+  transform: matrix(1.2, 0, 2679, 0, 20, 20);
+  /*(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
+ */
+}
+
+/* 
+transform-origin: (X,Y,Z) this will make it move with the way 
+the origin is located if it's to the right it will rotate to the right
+*/
+
+.hi {
+  transform-origin: (50% center);
+  /* this will make it in the middle */
+  transform-origin: (0% bottom);
+  /* this will make it on the bottom left corner */
+}
+
+/* 
+3D transform
+-TranslateZ and scale3d to move the items in 3 diminutions
+-perspective the point of view
+-perspective-origin
+*/
+
+/* VERY IMPORTANT to MAKING FLIP ON HOVER STUFF
+-backface-visibility: visible => default to show the thing when flipping
+-backface-visibility: hidden is gonna make it hidden after 90deg
+-transform-style: preserve-3d is to keep the item save position
+*/
+
+.con {
+  margin: 40px auto;
+  width: 200px;
+  perspective: 600px;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  transform-style: preserve-3d;
+  /* to keep the style in same place */
+  transition: transform 1s;
+  /* to make transition */
+}
+
+.box:hover {
+  transform: rotateY(-180deg);
+  /* to make it rotate in the y thingy */
+}
+
+.box .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.box .front {
+  background-color: red;
+}
+
+.box .back {
+  background-color: green;
+  backface-visibility: hidden;
+  /* to make it invisible when it go above 90deg */
+}
+
+/* 
+ANIMATION ! EXTRA VERY IMPORTANT
+@keyframes (name){ durations stuff }
+need to have 
+-animation-name: in line and 
+-animation-duration: to work
+other stuff
+-animation-iteration-count: to give the amount of time of animation
+-animation-timing-function: ease => default to make it stop at 
+the end and start again linear make it smooth
+-animation-direction: change the direction and also has alternate
+the alternate is to replay the animation to where it start
+-animation-delay:
+-animation-fill-mode: take last frame info from the animation
+-animation-play-state: running => default make the animation run
+or stop on hover or what needed
+-animation: (name) (duration) (type) (delay) (function) (direction)
+*/
+
+.div2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  margin-bottom: -50px;
+  margin-left: -50px;
+  background-color: #eee;
+  animation-name: color;
+  /* animation name from keyframes */
+  animation-duration: 2s;
+  /* how long the animation last */
+  animation-iteration-count: infinite;
+  /* to make it loop */
+  animation-timing-function: linear;
+  /* make the loop smooth and no delay after every loop */
+  animation-direction: alternate;
+  /* replay the animation */
+  animation-delay: 2s;
+  /* delay */
+  animation-fill-mode: both;
+  /* gonna take either last frame or first frame depend on direction */
+}
+
+@keyframes color {
+  /* to start an animation can put anywhere */
+  0% {
+    background-color: #eee;
+  }
+  25% {
+    background-color: black;
+  }
+  50% {
+    background-color: red;
+  }
+  75% {
+    background-color: orange;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
+
+div:hover {
+  animation-play-state: paused;
+  /* stop the animation when we hover on it */
+}
+
+/* VERY IMPORTANT
+CSS Selectors
+
+  Element=>[p,div,h2]
+- Element Other Element=>div p
+-.class-name
+-#id-name
+-.parent .child
+-.class-one.class-two
+-.class-name-div,.class-name p
+-Element.class-name
+-.parent>.child=>Direct Child
+
+
+
+-Element+Other Element=>[div+p]
+-Element Other Elements=>[p~div]
+  [Attribute]
+-Element[Attribute]
+-[Attribute-Value]
+-Element[Attribute=Value]=>input[type="submit"]
+-[Attribute~=Value]=>ContainsAWord
+-[Attribute*-Value]=>ContainsAString
+-[Attribute^=Value]=>Start WithAString
+
+
+- :first-child
+- :last-child
+- :first-of-type
+- :last-of-type
+- :only-child
+
+
+- :not(selectors)
+- :nth-child(n)
+- :nth-last-child()
+- :nth-of-type()
+- :nth-last-of-type()
+
+- :root
+- :checked
+- :empty
+- :disabled
+- :required
+- :focus
+- ::selection
+- ::placeholder
+*/
+
+@media (min-width: 500px) {
+  /* this to change the way the website show in different screens or print or screen reader */
+  div {
+    /* and here we add what we want to change */
+    color: red;
+  }
+}
+
+@media print and (max-width: 500px) {
+  /* and is used to add more than 1 thing to change */
+  div {
+    color: blue;
+  }
+}
+@media print, (max-width: 500px) {
+  /* , is used to make OR like print OR max-width:500px*/
+  div {
+    color: green;
+  }
+}
+
+@media (orientation: landscape) {
+  /* this will make any screen on landscape 16:9 apply the settings */
+  div {
+    background-color: red;
+  }
+}
+@media (orientation: portrait) {
+  /* this will make any screen on portrait 9:16 apply the settings */
+  div {
+    background-color: red;
+  }
+}

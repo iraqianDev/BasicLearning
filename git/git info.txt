@@ -1,0 +1,158 @@
+ git config --global core.editor "code"
+--set the default editor to vs code
+
+git config --global alias.(short_cut) "main command"
+--this will make shortcut to call rather than the whole command
+
+touch file.file_extension--this will create new file--
+
+echo "messege"
+--this will outputs the strings that are passed to it as arguments--
+
+cat file
+--to show what's inside file--
+
+mkdir folder_name
+--this will create new folder--
+
+ls
+--this will show folder files--
+
+mv folder (new name OR move to existing one)
+--this will change the folder name if or move it to the folder that already exist--
+
+git clone (github_link)
+--this will clone a project to the pc--
+
+git status
+--this will get the status of the file--
+
+git add file_name
+--this will add the file to the stag area--
+
+git reset head file_name
+--this  will remove the file from the stagging area--
+
+git commit -m "messege"
+--this will add the file to the local repo--
+
+git branch
+--shows the branches--
+
+git branch -m Name
+--this will change the branch name--
+
+git branch Name
+--make new branch with the name--
+
+git checkout Name
+--to change the branch to other branches--
+
+git checkout -b Name
+--this will create and switch to a branch--
+
+git branch -d Name
+--this will delete branch it there's no changes--
+
+git branch -D Name
+--this will force delete the branch no matter what--
+
+git push -u RemoteName BranchName
+--this will push the changes to remote repo--
+
+git merge Name
+--this will merge the branches together--
+
+git pull BranchName
+--this will get the changes that happen to the remote repo to local one--
+
+git config -l
+--this will show the list of config of configs--
+
+git config --global something.something
+--this will show the global config of that thing--
+
+git config --global something.something "new_thing"
+--this will change the global config of that thing--
+
+
+git config --global --edit
+--this will show the global editor of the config--
+
+ssh-keygen -t rsa -b 4096 -c "email"
+--this will create public key to get access to the remote repo -t stand for type/ -b stand for bits
+
+ssh -T git@github.com
+--this will activate the key when put in the settings--
+
+git init
+--will initialize a empty git repo--
+
+git config --global alias.(shortcut) "main_action"
+--this will put nickname on any action to use it in shortcut also can edit in editor--
+
+git stash
+--this will put files on the side after using add not to commit them--
+
+git stash pop
+--this will return the files from the stash--
+
+git stash list
+--this will show the amount of stash files--
+
+git stash save "messege"
+--this will show messege next to the stash files--
+
+git stash (anything) stash@{number}
+--this will select a specific stash to apply to--
+
+git drop
+--this will delete the stash--
+
+git stash show stash@{number}
+--this will show the stash files inside--
+
+git stash clear
+--delete every stash--
+
+git restore --staged (file)
+--this will get files back from the staging area (commit)--
+
+git clean -n
+--will show the files that will be deleted--
+
+git clean -f
+--will force delete the files showen in -n--
+
+git log
+--will show the log of all commits--
+
+git reset --hard (commit hash)
+git push RemoteName BranchName
+--this will set a commit and delete anything before the selected commit--
+
+git tag
+--shows the tags--
+
+git tag "name"
+--make a tag name--
+
+git push origin "tag_name"
+--this will push the files with tag name if we want to go to previous versions--
+
+git tag -a tag_name -m "tag description"
+--to change the tag description and not take commit name--
+
+git tag -d tag_name
+--delete a tag from local repo--
+
+git push origin --delete tag_name
+--delete tag from remote repo--
+
+git init
+git add *
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/MuneerDev/b.git
+git push -u origin main
+--this will upload a file to github--

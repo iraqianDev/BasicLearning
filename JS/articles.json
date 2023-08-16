@@ -1,0 +1,37 @@
+[
+    {
+        "id": "0",
+        "artical_creator": "my smart ass",
+        "artical_name": "smart artical",
+        "artical_section": "idfk",
+        "content": "who the hell would write artical"
+    },
+    {
+        "id": "1",
+        "artical_creator": "my smart ass+1",
+        "artical_name": "smart artical+1",
+        "artical_section": "idfk+1",
+        "content": "who the hell would write artical+1"
+    },
+    {
+        "id": "2",
+        "artical_creator": "my smart ass+2",
+        "artical_name": "smart artical+2",
+        "artical_section": "idfk+2",
+        "content": "who the hell would write artical+2"
+    },
+    {
+        "id": "3",
+        "artical_creator": "my smart ass+3",
+        "artical_name": "smart artical+3",
+        "artical_section": "idfk+3",
+        "content": "who the hell would write artical+3"
+    },
+    {
+        "id": "4",
+        "artical_creator": "my smart ass+4",
+        "artical_name": "smart artical+4",
+        "artical_section": "idfk+4",
+        "content": "who the hell would write artical+4"
+    }
+]
